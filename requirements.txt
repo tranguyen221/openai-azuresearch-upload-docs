@@ -1,0 +1,7 @@
+openai
+langchain
+azure-search-documents
+python-dotenv
+tiktoken
+azure-identity==1.14.0
+unstructured
