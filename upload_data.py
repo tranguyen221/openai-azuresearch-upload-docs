@@ -62,10 +62,11 @@ def index_documents(directory_path, chunk_size=1000, chunk_overlap=20, separator
  
     texts = split_docs(docs, chunk_size, chunk_overlap)
     print(f"Number of chunks: {len(texts)}")
-    st.write("Start to generate index to Azure Search...")
+    st.write("Starting to generate index in Azure Search...")
     # Add documents to Azure Search
     acs.add_documents(documents=docs)
     st.write("Your index is ready! Please go to the chat page to start your conversation.")
+    st.markdown("[Go to chat page](https://hackathon-openai-ip-reuse.azurewebsites.net/)")
 
 
 def load_docs(directory):
