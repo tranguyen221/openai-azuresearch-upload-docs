@@ -9,8 +9,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import AzureSearch
-
-
+from form_recognizer_loader import FormRecognizerLoader
 
 
 def display_pdf(placeholder, pdf_bytes, page_number=None):
